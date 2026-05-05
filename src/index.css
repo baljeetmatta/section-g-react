@@ -109,3 +109,26 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+#productDetails
+{
+ display: flex;
+ column-gap: 20px;
+ padding: 20px; 
+}
+#header{
+  background-color: #08060d;
+  color:white;
+  display: flex;
+  justify-content: space-between;
+}
+#header a{
+  color:white;
+  text-decoration: none;
+}
+#products
+{
+  display: flex;
+  grid-template-columns: 3;
+  column-gap: 15px;
+}
