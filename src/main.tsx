@@ -9,11 +9,14 @@ import { Provider } from 'react-redux'
 import store from './reduxStore.ts'
 import ProductDetails from './ProductDetails.tsx'
 import Products from './Products.tsx'
+import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
+ 
+    <BrowserRouter>
     <Provider store={store}>
-    <Products />
+   <App/>
     </Provider>
-  </StrictMode>,
+    </BrowserRouter>
+  ,
 )
